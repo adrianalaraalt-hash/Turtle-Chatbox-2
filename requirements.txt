@@ -1,0 +1,16 @@
+streamlit==1.38.0
+pandas==2.2.2
+numpy==1.26.4
+# Sanity check for requirements.txt
+
+# Install from requirements.txt (you can upload your file or just inline the package)
+!pip install -r requirements.txt
+
+# Verify installation
+import streamlit
+print("✅ Streamlit installed, version:", streamlit.__version__)
+
+# Extra: confirm it's the one pinned in requirements.txt
+required_version = "1.38.0"
+assert streamlit.__version__ == required_version, f"Version mismatch! Expected {required_version}"
+print("✅ Version matches requirements.txt")
